@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Opencart Test Suite">
+      
+      <listeners>
+      	<listener class-name="utilities.ExtentReportManager"/>
+      </listeners>
+      
+      
+      <test name = "Opencart Tests">
+        <groups>
+      
+          <run>
+            <include name="mastersuit"/>
+        
+          </run>
+        </groups>
+      <parameter name = "browser" value="chrome"/>
+      
+      <classes>
+      
+      <class name="testCase.TC_001_AccountRegistraion"/>
+      <class name="testCase.TC_002_AccountLogin"/>  
+     <!--   <class name = "testCase.TC_003_LoginDDT"/>-->
+      </classes>
+      
+      
+      </test>
+
+
+
+
+
+
+
+</suite>
